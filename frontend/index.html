@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Student Management System</h1>
+            <p>Examination Centre Management Portal</p>
+        </header>
+
+        <main>
+            <div class="dashboard">
+                <h2>Welcome to the Examination Centre</h2>
+                <p>Select an option below to manage student records and marks</p>
+
+                <div class="menu-grid">
+                    <div class="menu-item" onclick="navigateTo('add-student')">
+                        <div class="menu-icon">➕</div>
+                        <h3>Add Student Details</h3>
+                        <p>Register a new student with basic information</p>
+                    </div>
+
+                    <div class="menu-item" onclick="navigateTo('add-marks')">
+                        <div class="menu-icon">📝</div>
+                        <h3>Add Student Marks</h3>
+                        <p>Enter marks for Physics, Chemistry, Maths, CS, English</p>
+                    </div>
+
+                    <div class="menu-item" onclick="navigateTo('search-student')">
+                        <div class="menu-icon">🔍</div>
+                        <h3>Search Student</h3>
+                        <p>Find and view a student's marks and details</p>
+                    </div>
+
+                    <div class="menu-item" onclick="navigateTo('delete-student')">
+                        <div class="menu-icon">🗑️</div>
+                        <h3>Delete Student Record</h3>
+                        <p>Remove a student from the system</p>
+                    </div>
+
+                    <div class="menu-item" onclick="navigateTo('update-student')">
+                        <div class="menu-icon">✏️</div>
+                        <h3>Update Student Record</h3>
+                        <p>Modify student information</p>
+                    </div>
+
+                    <div class="menu-item" onclick="navigateTo('display-marks')">
+                        <div class="menu-icon">📊</div>
+                        <h3>Display Student Marks</h3>
+                        <p>View all marks for a specific student</p>
+                    </div>
+
+                    <div class="menu-item" onclick="navigateTo('analytics')">
+                        <div class="menu-icon">🏆</div>
+                        <h3>Top & Least Scorers</h3>
+                        <p>Analyze top and bottom performers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-content" class="page-content"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Student Management System. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
